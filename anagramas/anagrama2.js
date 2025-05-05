@@ -43,4 +43,5 @@ const checkAnagram = (string1, string2) => {
 
 console.log(checkAnagram('amor', 'roma')) // true
 
+console.log(checkAnagram('mora', 'amor')) // false
 console.log(checkAnagram('aaaa', 'aaaa')) // false
