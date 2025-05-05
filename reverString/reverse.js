@@ -5,9 +5,9 @@ function reverseString(str) {
     return str.split('').reverse().join('')
 }
 function reverseString2(str) {
-    let rvrsdString = ''
+    let rvrsdStrng = ''
     for (let i = str.length - 1; i >= 0; i--) {
-        rvrsdString += str[i]
+        rvrsdStrng += str[i]
     }
-    return rvrsdString
+    return rvrsdStrng
 }
