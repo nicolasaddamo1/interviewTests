@@ -1,5 +1,5 @@
 //Anagram 
-function anagrama(palabra1, palabra2) {
+function anagrama(word1, word2) {
     let reomveSpacesAndToLowerCase = function (str) {
         let result = ''
         for (const element of str) {
@@ -12,12 +12,12 @@ function anagrama(palabra1, palabra2) {
     let sortString = function (str) {
         return reomveSpacesAndToLowerCase(str).split('').sort().join('')
     }
-    return sortString(palabra1) === sortString(palabra2)
+    return sortString(word1) === sortString(word2)
 }
 
 //OJO con esto, no es un anagrama, sino que se fija si las letras son las mismas, pero no importa el orden.
 
-solucion = function (palabra1, palabra2) {
+solucion = function (word1, word2) {
     let reomveSpacesAndToLowerCase = function (str) {
         let result = ''
         for (const element of str) {
@@ -27,9 +27,9 @@ solucion = function (palabra1, palabra2) {
         }
         return result
     };
-    let sortString = function (palabra1, palabra2) {
-        const str1 = reomveSpacesAndToLowerCase(palabra1).split('')
-        const str2 = reomveSpacesAndToLowerCase(palabra2).split('')
+    let sortString = function (word1, word2) {
+        const str1 = reomveSpacesAndToLowerCase(word1).split('')
+        const str2 = reomveSpacesAndToLowerCase(word2).split('')
         console.log(str1, str2)
         if (str1.length === str2.length) {
             for (let i = 0; i < str1.length; i++) {
@@ -44,7 +44,7 @@ solucion = function (palabra1, palabra2) {
         }
 
     }
-    return sortString(palabra1, palabra2)
+    return sortString(word1, word2)
 }
 console.log(solucion('amor', 'roma')) // true
 console.log(solucion('mora', 'amor')) // false
